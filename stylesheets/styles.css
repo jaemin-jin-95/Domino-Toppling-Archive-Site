@@ -5,23 +5,26 @@ body {
   padding: 0;
   /* background:-webkit-linear-gradient(left, white); */
 }
-/**************/
 
+/**************/
 /* Navigation Bars */
-nav ul {
+nav {
   background-color: #aaa;
   font-size: 25px;
-  margin: 0;
   overflow: hidden;
+}
+
+nav ul {
+  margin: 0;
   padding: 0;
 }
 
-nav li {
+nav ul li {
   float: left;
   /* border-right: 2px solid white; */
 }
 
-nav li a, .dropbtn {
+nav ul li {
   display: block;
   line-height: 1em;
   list-style-type: none;
@@ -41,7 +44,6 @@ nav ul .bar1:hover:not(.active1) {
   background-color: #e6e600;
 }
 
-/*
 nav ul .bar2:hover:not(.active2) {
   background-color: #adebad;
 }
@@ -49,7 +51,6 @@ nav ul .bar2:hover:not(.active2) {
 .active2 {
   background-color: #208000;
 }
-*/
 
 nav ul .bar3:hover:not(.active3) {
   background-color: #ff4d4d;
