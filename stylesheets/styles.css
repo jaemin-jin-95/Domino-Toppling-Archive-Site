@@ -44,6 +44,7 @@ nav ul .bar1:hover:not(.active1) {
   background-color: #e6e600;
 }
 
+/*
 nav ul .bar2:hover:not(.active2) {
   background-color: #adebad;
 }
@@ -51,6 +52,7 @@ nav ul .bar2:hover:not(.active2) {
 .active2 {
   background-color: #208000;
 }
+*/
 
 nav ul .bar3:hover:not(.active3) {
   background-color: #ff4d4d;
