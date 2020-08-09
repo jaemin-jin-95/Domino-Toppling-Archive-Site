@@ -8,23 +8,20 @@ body {
 /**************/
 
 /* Navigation Bars */
-nav {
+nav ul {
   background-color: #aaa;
   font-size: 25px;
-  overflow: hidden;
-}
-
-nav ul {
   margin: 0;
+  overflow: hidden;
   padding: 0;
 }
 
-nav ul li {
+nav li {
   float: left;
   /* border-right: 2px solid white; */
 }
 
-nav ul li {
+nav li a, .dropbtn {
   display: block;
   line-height: 1em;
   list-style-type: none;

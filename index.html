@@ -6,19 +6,107 @@
   <link rel="stylesheet" href="stylesheets/styles.css">
   <!-- Bootstrap is optional, I guess... -->
 </head>
+  <!-- Dropdown content -->
+<style>
+  li {float: left;}
+
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover, .dropdown:hover .dropbtn {background-color: #adebad;}
+
+
+  li.dropdown {display: inline-block;}
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+</style>
+  <!-- -->
 <body>
   <header>
     <h1>TheDominoSwag Jin</h1>
+    <p style="text-align:right">Established October 2007</p>
   </header>
 
   <nav>
     <ul>
       <li class="bar1"><a href="#">Home</a></li>
-      <li class="bar2"><a href="#">Subscribers Videos</a></li>
+      <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"
+        href="#">
+        Subscribers Videos</a>
+        <div class="dropdown-content">
+          <a href="#">4 Subscribers</a>
+          <a href="#">10 Subscribers</a>
+          <a href="#">100 Subscribers</a>
+          <a href="#">300 Subscribers</a>
+          <a href="#">500 Subscribers</a>
+          <a href="#">1000 Subscribers</a>
+        </div>
+        </li>
       <li class="bar3"><a href="#">FAQ</a></li>
       <li style="float:right" class="bar4"><a href="#">Feedback</a></li>
     </ul>
   </nav>
+
+  <article>
+    <h1 style="text-align:center">About TheDominoSwag Jin</h1>
+    <section>
+      <p>I created my channel on October 27, 2007. At that time, I was only
+        watching a bunch of domino videos. I found a FlippyCat's channel for my
+        inspiration. So, I began to upload my domino videos and started the
+        classic domino series. Although I had few subscribers back then, I was
+        not thinking about becoming famous on my channel.
+      </p>
+    </section>
+
+    <section style="border: 2px solid Gold">
+      <h2>Classic Domino Series</h2>
+      <p>Domino Fall Downs</br>
+         Domino Screen Links</br>
+         Simple Rube Goldbergs</br>
+         Domino Builder's Challenges</p>
+    </section>
+
+    <section>
+      <p>Around late 2014, I was running out of domino ideas. Until I watched a
+        FlippyCat's video, 'Spectacular Domino Rally Stunt Screen Link', I was
+        able to invent something unique. Since early 2015, I have expanded types
+        of unique domino series. As of today, I do enjoy making the unique
+        domino series and other things.
+      </p>
+    </section>
+
+    <section style="border: 2px solid LimeGreen">
+      <h2>Modern Domino Series</h2>
+      <p>Domino Projects</br>
+         Domino Rally Stunt Builder Challenge Screen Links</br>
+         Empty Toilet/Towel Paper Rolls Fun with Dominoes</br>
+         Domino Rally Pivot Track Screen Links</br>
+         Small Ball Chain Reaction Styles with Domino Rally/Express Stunts</p>
+  </article>
 
 </body>
 </html>
