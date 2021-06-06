@@ -1,3 +1,7 @@
+header {
+  background-image: url("images/bannerart.png")
+}
+
 /* Entire Body */
 body {
   font-family: "Microsoft Sans Serif", Helvetica, Arial, sans-serif;
@@ -25,10 +29,12 @@ a:link {
   text-decoration: none;
 }
 
+/*
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
+*/
   /* With Dropdown */
 .dropdown {
   float: left;
