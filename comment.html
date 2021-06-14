@@ -5,6 +5,8 @@
   charset="UTF-8">
   <title>Comment - TheDominoSwag Jin</title>
   <link rel="stylesheet" href="stylesheets/styles2.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
   <style>
     #active4 {
       background-color: white;
@@ -35,13 +37,37 @@
     <a href="dominopictures.html" target="_blank">Domino Pictures</a>
     <a id="active4" style="float:right" href="comment.html">Comment</a>
   </nav>
-  <article>
-    <section style="text-align:center">
-      <h2 style="text-align:center">Comment</h2>
-      <script src="scripts/datastore.js" charset="utf-8"></script>
-      <script src="scripts/truck.js" charset="utf-8"></script>
-      <script src="scripts/main2.js" charset="utf-8"></script>
-    </section>
-  </article>
+  <h2 style="text-align:center">Comment</h2>
+  <section class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <form data-comment-order="form">
+          <div class="form-group">
+            <label for="isl">Improvement, Suggestion, or Likeness?</label>
+            <select id="isl" class="form-control" name="choose">
+              <option value="improvement">Improvement</option>
+              <option value="suggestion">Suggestion</option>
+              <option value="likeness">Likeness</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="commentDescription">Comment Description</label>
+            <input class="form-control" name="comment" id="commentDescription"
+            autofocus>
+          </div>
+          <div class="form-group">
+            <label for"emailInput">Email</label>
+            <input class="form-control" type="email" name="emailAddress"
+            id="emailInput" value="" placeholder="example@email.com">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="reset" class="btn btn-default">Reset</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="scripts/datastore.js" charset="utf-8"></script>
+  <script src="scripts/truck.js" charset="utf-8"></script>
+  <script src="scripts/main2.js" charset="utf-8"></script>
 </body>
 </html>
