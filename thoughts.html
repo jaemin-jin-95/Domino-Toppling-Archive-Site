@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="stylesheets/styles.css">
   <style>
     /* Current active page */
-    #active4 {
+    #active5 {
       background-color: white;
       color: black;
     }
@@ -28,7 +28,7 @@
 
   <!-- Navigation Bar -->
   <nav class="topnav">
-    <a href="index.html">Home</a>
+    <a class="active1" href="index.html">Home</a>
     <div class="dropdown">
       <button class="dropbtn">Subscribers Milestones</button>
       <div class="dropdown-content">
@@ -38,13 +38,26 @@
         <a href="https://youtu.be/yZskbcuaotk">1000 Subscribers</a>
       </div>
     </div>
-    <a href="faq.html">FAQ</a>
-    <a href="dominopictures.html" target="_blank">Domino Pictures Gallery</a>
-    <a id="active4" style="float:right" href="thoughts.html">Thoughts</a>
+    <a class="active3" href="faq.html">FAQ</a>
+    <a class="active4" href="dominopictures.html" target="_blank">Domino
+      Pictures Gallery</a>
+    <a id="active5" style="float:right" href="thoughts.html">Thoughts</a>
   </nav>
   <!-- -->
 
-  <h2 style="text-align:center">Thoughts</h2>
-
+  <!-- Thoughts Feedback -->
+  <main style="text-align:center;">
+    <section>
+      <h2>Thoughts</h2>
+      <form>
+        <label for="feedback">What do you think about the overall design of this
+          domino archive site?</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <!-- -->
 </body>
 </html>
