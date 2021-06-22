@@ -3,11 +3,10 @@ html, body {
 }
 
 body {
+  background: rgb(245, 49, 62);
   display: flex;
   flex-direction: column;
-
   font-size: 10px;
-  background: rgb(245, 49, 62);
 }
 
 a {
@@ -20,42 +19,39 @@ a {
 
 .logo-text {
   background: white;
-
+  font-size: 37px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 37px;
 }
 
-.main-content{
-  flex: 1 1 auto;
+.main-content {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
 }
 
 .thumbnail-item {
-  display: inline-block;
-  min-width: 120px;
-  max-width: 120px;
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
-
+  display: inline-block;
+  max-width: 120px;
+  min-width: 120px;
   transition: transform 133ms ease-in-out;
 }
 
-.thumbnail-item:hover{
+.thumbnail-item:hover {
   transform: scale(1.2);
 }
 
 .thumbnail-list {
-  flex: 0 1 auto;
-  order: 2;
   display: flex;
+  flex: 0 1 auto;
   justify-content: space-between;
   list-style: none;
-  padding: 20px 0;
-
-  white-space: nowrap;
+  order: 2;
   overflow-x: auto;
+  padding: 20px 0;
+  white-space: nowrap;
 }
 
 .thumbnail-image {
@@ -64,28 +60,25 @@ a {
 }
 
 .thumbnail-title {
-  display: block;
-  margin: 0;
-  padding: 4px 10px;
-
   background: rgb(96, 125, 139);
   color: rgb(202, 238, 255);
-
+  display: block;
   font-size: 18px;
+  margin: 0;
+  padding: 4px 10px;
 }
 
 .detail-image-container {
-  flex: 1 1 auto;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
 }
 
 .detail-image-frame {
   position: relative;
-  text-align: center;
-
   /* transition: transform 333ms cubic-bezier(1,.06,.28,1);*/
+  text-align: center;
 }
 
 .is-tiny {
@@ -98,13 +91,12 @@ a {
 }
 
 .detail-image-title {
-  position: absolute;
   bottom: -16px;
-  left: 4px;
-
   color: white;
-  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
   font-size: 40px;
+  left: 4px;
+  position: absolute;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
 }
 
 .hidden-detail .detail-image-container {
@@ -112,8 +104,8 @@ a {
 }
 
 .hidden-detail .thumbnail-list {
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .hidden-detail .thumbnail-item {
@@ -128,9 +120,8 @@ a {
 
   .thumbnail-list {
     flex-direction: column;
-    order: 0;
     margin-left: 20px;
-
+    order: 0;
     padding: 0 35px;
   }
 
