@@ -33,10 +33,35 @@ a {
 }
 /*             */
 
+/* Hover the Home page */
+.active1:hover {
+  background-color: green;
+}
+
+/* Hover the FAQ page */
+.active3:hover {
+  background-color: yellow;
+  color: black;
+}
+/*                */
+
+/* Hover the Domino Pictures Gallery page */
+.active4:hover {
+  background-color: red;
+}
+/*                                        */
+
+/* Hover the Thoughts page */
+.active5:hover {
+  background-color: white;
+  color: black;
+}
+/*                         */
+
 /* Navbar container */
 .topnav {
-  overflow: hidden;
   background-color: black;
+  overflow: hidden;
 }
 /*                  */
 
@@ -49,11 +74,11 @@ a {
 
 /* Links inside the top nav */
 .topnav a {
+  color: white;
   float: left;
   font-size: 17px;
-  color: white;
-  text-align: center;
   padding: 14px 16px;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -64,36 +89,36 @@ a {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
   background-color: inherit;
+  border: none;
+  color: white;
   font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /*Important for vertical align on mobile phones */
+  font-size: 17px;
+  margin: 0;            /* Important for vertical align on mobile phones */
+  outline: none;
+  padding: 14px 16px;
 }
 /*                 */
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  min-width: 207.5px;
+  position: absolute;
   z-index: 1;
 }
 /*                                      */
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  float: none;
   color: black;
-  padding: 12px 16px;
-  text-decoration: none;
   display: block;
+  float: none;
+  padding: 12px 16px;
   text-align: left;
+  text-decoration: none;
 }
 /*                           */
 
