@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="stylesheets/styles.css">
   <style>
     /* Current active page */
-    #active2 {
+    #active3 {
       background-color: yellow;
       color: black;
     }
@@ -25,15 +25,15 @@
     }
 
     .overlay {
-      position: absolute;
-      top: 0;
       bottom: 0;
-      left: 0;
-      right: 0;
       height: 100%;
-      width: 100%;
+      left: 0;
       opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
       transition: .5s ease;
+      width: 100%;
     }
 
     .container:hover .overlay {
@@ -43,13 +43,13 @@
     .text {
       color: white;
       font-size: 20px;
+      left: 50%;
       position: absolute;
       top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, 100%);
       text-align: center;
+      transform: translate(-50%, 100%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
     }
     /*                           */
   </style>
@@ -68,7 +68,7 @@
 
   <!-- Navigation Bar -->
   <nav class="topnav">
-    <a href="index.html">Home</a>
+    <a class="active1" href="index.html">Home</a>
     <div class="dropdown">
       <button class="dropbtn">Subscribers Milestones</button>
       <div class="dropdown-content">
@@ -78,9 +78,10 @@
         <a href="https://youtu.be/yZskbcuaotk">1000 Subscribers</a>
       </div>
     </div>
-    <a id="active2" href="faq.html">FAQ</a>
-    <a href="dominopictures.html" target="_blank">Domino Pictures Gallery</a>
-    <a style="float:right" href="thoughts.html">Thoughts</a>
+    <a id="active3" href="faq.html">FAQ</a>
+    <a class="active4" href="dominopictures.html" target="_blank">Domino
+      Pictures Gallery</a>
+    <a class="active5" style="float:right" href="thoughts.html">Thoughts</a>
   </nav>
   <!-- -->
 
@@ -89,12 +90,14 @@
     <section>
       <article>
         <h2 style="text-align:center">Frequently Asked Questions</h2>
+        <hr>
         <p>Q1. DID YOU BUY MORE DOMINOES?<br>
-           A1. I rather bought more <b>Domino Rally stunts</b> than
+           A1. I rather bought more <mark><b>Domino Rally stunts</b></mark> than
            <i>dominoes</i> because I kept making kinds of videos.</p>
+        <hr>
         <p>Q2. HOW MANY DOMINOES DO YOU OWN?<br>
-           A2. I approximately have <b>2,000 dominoes</b> excluding pivot
-           dominoes and wooden blocks.</p>
+           A2. I have a grand total of <mark><b>2,130 dominoes</b></mark>
+           excluding pivot dominoes and wooden blocks.</p>
         <div class="container">
           <img src="images/mydominoes.jpg" alt="Dominoes" style="width:40%;">
             <div class="overlay">
@@ -104,11 +107,12 @@
               </div>
             </div>
         </div>
+        <hr>
         <p>Q3. WHAT WAS YOUR CURRENT VIDEO EDITING SOFTWARE TO EDIT AND YOUR
            CAMERA(S) TO FILM?<br>
-           A3. I had been editing videos on <b>iMovie</b> since late 2014. And I
-           film video clips with my <b>Samsung Galaxy Note 8</b> and possibly
-           <i>iPad Pro</i>.</p>
+           A3. I had been editing videos on <mark><b>iMovie</b></mark> since
+           late 2014. And I film video clips with my <mark><b>Samsung Galaxy
+           Note 8</b></mark> and possibly <i>iPad Pro</i>.</p>
       </article>
     </section>
   </main>
