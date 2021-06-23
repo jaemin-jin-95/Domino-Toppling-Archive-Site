@@ -13,6 +13,9 @@
     }
     /*                     */
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous">
+  </script>
 </head>
 <body>
   <!-- Background Domino Image Header with Information and Link -->
@@ -26,22 +29,32 @@
   </header>
   <!-- -->
 
-  <!-- Navigation Bar -->
+  <!-- Navigation Bar: Home, Subscribers Milestones, FAQ, Domino Pictures
+       Gallery, and Thoughts -->
   <nav class="topnav">
-    <a class="active1" href="index.html">Home</a>
+    <a class="active1" href="index.html"><i class="fa fa-fw fa-home"
+      style='font-size:20px'></i> Home</a>
     <div class="dropdown">
-      <button class="dropbtn">Subscribers Milestones</button>
+      <button class="dropbtn"><i class="fab fa-youtube" style='font-size:20px'>
+      </i> Subscribers Milestones</button>
       <div class="dropdown-content">
-        <a href="https://youtu.be/9fHV2pb_ckQ">100 Subscribers</a>
-        <a href="https://youtu.be/1qqq2Yn69LA">300 Subscribers</a>
-        <a href="https://youtu.be/GJF2h9P7EQ4">500 Subscribers</a>
-        <a href="https://youtu.be/yZskbcuaotk">1000 Subscribers</a>
+        <a href="https://youtu.be/9fHV2pb_ckQ" target="_blank">
+          100 Subscribers</a>
+        <a href="https://youtu.be/1qqq2Yn69LA" target="_blank">
+          300 Subscribers</a>
+        <a href="https://youtu.be/GJF2h9P7EQ4" target="_blank">
+          500 Subscribers</a>
+        <a href="https://youtu.be/yZskbcuaotk" target="_blank">
+          1,000 Subscribers</a>
       </div>
     </div>
-    <a class="active3" href="faq.html">FAQ</a>
-    <a class="active4" href="dominopictures.html" target="_blank">Domino
-      Pictures Gallery</a>
-    <a id="active5" style="float:right" href="thoughts.html">Thoughts</a>
+    <a class="active3" href="faq.html"><i class="fas fa-question-circle"
+      style='font-size:20px'></i> FAQ</a>
+    <a class="active4" href="dominopictures.html" target="_blank">
+      <i class="fas fa-images" style='font-size:20px'></i> Domino Pictures
+      Gallery</a>
+    <a id="active5" style="float:right" href="thoughts.html">
+      <i class="fab fa-wpforms" style='font-size:20px'></i> Thoughts</a>
   </nav>
   <!-- -->
 
@@ -52,7 +65,8 @@
       <form>
         <label for="feedback">What do you think about the overall design of this
           domino archive site?</label><br>
-        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+        <textarea rows="4" cols="50" name="feedback" required>
+        </textarea>
         <br><br>
         <input type="submit" value="Submit">
       </form>
