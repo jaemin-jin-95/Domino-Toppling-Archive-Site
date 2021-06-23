@@ -72,6 +72,12 @@ a {
 }
 /*                        */
 
+/* Hovering the dropdown */
+.dropdown:hover {
+  background-color: blue;
+}
+/*                       */
+
 /* Links inside the top nav */
 .topnav a {
   color: white;
@@ -105,7 +111,7 @@ a {
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   display: none;
-  min-width: 207.5px;
+  min-width: 234.5px;
   position: absolute;
   z-index: 1;
 }
