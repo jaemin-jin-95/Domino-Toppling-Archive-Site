@@ -1,3 +1,14 @@
+/* Entire Body */
+body {
+  font-family: "Microsoft Sans Serif", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background:-webkit-linear-gradient(left, white); */
+}
+
+a { text-decoration: none; }
+/*             */
+
 /* Background Image */
 .bg-img {
   /* The image used */
@@ -20,47 +31,30 @@
 }
 /*                  */
 
-/* Entire Body */
-body {
-  font-family: "Microsoft Sans Serif", Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  /* background:-webkit-linear-gradient(left, white); */
-}
-
-a {
-  text-decoration: none;
-}
-/*             */
-
 /* Hover the Home page */
-.active1:hover {
-  background-color: #008000;          /* green */
-}
+.active1:hover { background: #008000; }        /* green */
 
 /* Hover the FAQ page */
 .active3:hover {
-  background-color: #FFFF00;          /* yellow */
-  color: #000000;                     /* black */
+  background: #FFFF00;                         /* yellow */
+  color: #000000;                              /* black */
 }
 /*                */
 
 /* Hover the Domino Pictures Gallery page */
-.active4:hover {
-  background-color: #FF0000;          /* red */
-}
+.active4:hover { background: #FF0000; }        /* red */
 /*                                        */
 
 /* Hover the Thoughts page */
 .active5:hover {
-  background-color: #FFFFFF;          /* white */
-  color: #000000;                     /* black */
+  background: #FFFFFF;                         /* white */
+  color: #000000;                              /* black */
 }
 /*                         */
 
 /* Navbar container */
 .topnav {
-  background-color: #000000;          /* black */
+  background: #000000;                         /* black */
   overflow: hidden;
 }
 /*                  */
@@ -73,14 +67,12 @@ a {
 /*                        */
 
 /* Hovering the dropdown */
-.dropdown:hover {
-  background-color: #0000FF;          /* blue */
-}
+.dropdown:hover { background: #0000FF; }       /* blue *
 /*                       */
 
 /* Links inside the top nav */
 .topnav a {
-  color: #FFFFFF;                     /* white */
+  color: #FFFFFF;                              /* white */
   float: left;
   font-size: 17px;
   padding: 14px 16px;
@@ -88,14 +80,12 @@ a {
   text-decoration: none;
 }
 
-.topnav .dropdown button:hover {
-  background-color: #0000FF;          /* blue */
-}
+.topnav .dropdown button:hover { background: #0000FF; }    /* blue */
 /*                          */
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  background-color: inherit;
+  background: inherit;
   border: none;
   color: #FFFFFF;                     /* white */
   font-family: inherit; /* Important for vertical align on mobile phones */
@@ -108,7 +98,7 @@ a {
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  background-color: #F9F9F9;
+  background: #F9F9F9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   display: none;
   min-width: 234.5px;
@@ -129,13 +119,10 @@ a {
 /*                           */
 
 /* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+.dropdown-content a:hover { background: #ddd; }
 /*                                                        */
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+.dropdown:hover .dropdown-content { display: block; }
 /*                                 */
+/*                      */
