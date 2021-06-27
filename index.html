@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US", dir="ltr">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"
   charset="UTF-8">
   <title>Home - TheDominoSwag Jin's Archive</title>
   <link rel="stylesheet" href="stylesheets/styles.css">
   <style>
-    /* Current active page */
-    #active1 {
-      background-color: #008000;          /* green */
-    }
-    /*                     */
+    /* Displaying the video playlists in horizontal mode */
+    iframe { display: inline-block; }
+    /*                                                   */
 
     /* Creating YouTube channel circle-shaped icons */
     .avatar {
@@ -21,17 +19,94 @@
     }
     /*                                              */
 
-    /* Displaying the video playlists in horizontal mode */
-    iframe {
-      display: inline-block;
+    /* BEFORE TheDominoSwag Jin Layout */
+    .before {
+      background: #F1B10E;
+      padding-bottom: 20px;
     }
-    /*                                                   */
+
+    .before h2 {
+      background: #B8860B;
+      color: #FFFFFF;
+      margin: 0px;
+    }
+    /*                         */
+
+    /* DURING TheDominoSwag Jin Layout */
+    .during {
+      background: #00B300;
+      padding-bottom: 5px;
+    }
+
+    .during h2 {
+      background: #006400;
+      color: #FFFFFF;
+      margin: 0px;
+    }
+    /*                          */
+
+    /* Classic Domino Series Playlists Layout */
+    .classic {
+      background: #FF8080;
+      padding-bottom: 5px;
+    }
+
+    .classic h2 {
+      background: #B22222;
+      color: #FFFFFF;
+      margin: 0px;
+    }
+    /*                                 */
+
+    /* Modern Domino Series Playlists Layout */
+    .modern {
+      background: #00BFFF;
+      padding-bottom: 5px;
+    }
+
+    .modern h2 {
+      background: #0059b3;
+      color: #FFFFFF;
+      margin: 0px;
+    }
+    /*                                */
+
+    /* Current active page */
+    #active1 { background: #008000; }        /* green */
+    /*                     */
+
+    /* Having 'Top' button */
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background: #FFFFFF;              /* white */
+      color: #000000;                   /* black */
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background: #000000;              /* white */
+      color: #FFFFFF;                   /* black */
+    }
+    /*                    */
   </style>
   <script src="https://kit.fontawesome.com/a076d05399.js"
     crossorigin="anonymous">
   </script>
 </head>
 <body>
+  <!-- Top Button -->
+  <button onClick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <!-- -->
+
   <!-- Background Domino Image Header with Information and Link -->
   <header class="bg-img">
     <a href="index.html"><h1>TheDominoSwag Jin's Archive</h1></a>
@@ -47,7 +122,7 @@
        Gallery, and Thoughts -->
   <nav class="topnav">
     <a id="active1" href="index.html"><i class="fa fa-fw fa-home"
-      style='font-size:20px'></i> Home</a>
+      style="font-size:20px;"></i> Home</a>
     <div class="dropdown">
       <button class="dropbtn"><i class="fab fa-youtube" style="font-size:20px;">
       </i> Subscribers Milestones</button>
@@ -76,165 +151,233 @@
        Classic Domino Series Playlists, and Modern Domino Series Playlists -->
   <main style="text-align:center;">
     <!-- 1st Section: BEFORE TheDominoSwag Jin -->
-    <section style="background-color: #F1B10E; padding-bottom: 20px;">
-      <h2 style="background-color: #B8860B; color: #FFFFFF; margin: 0px;">
-        BEFORE TheDominoSwag Jin</h2>
-      <article>
-        <p>
-        Before uploading domino videos, I was only watching a bunch of domino
-        videos. FlippyCat, dominofan0803, Hevesh5, etc.,
-        were my inspirations. So, on October 27, 2007, I created my formal
-        YouTube channel called 'jjm9512' for the first time. I began to upload
-        my domino videos and started the classic domino series initially.
-        Although I had few subscribers back then, I was not thinking about
-        reaching 1,000 subscribers on my channel.
-        </p>
-      </article>
-      <h3>Most Memorable YouTube Domino Main Channels I Watch</h3>
-      <article>
-        <div style="text-align:center;">
-          <span title="aznskittles09">
-            <a href="https://www.youtube.com/user/aznskittles09">
-              <img src="images/aznskittles09.jpeg" alt="azn" class="avatar"></a>
-          </span>
-          <span title="bestpal">
-            <a href="https://www.youtube.com/user/bestpal">
-              <img src="images/bestpal.jpeg" alt="bestpal" class="avatar"></a>
-          </span>
-          <span title="Domino Boy 08">
-            <a href="https://www.youtube.com/user/dominoboy08">
-              <img src="images/Domino_Boy_08.jpeg" alt="dominoboy"
-              class="avatar"></a>
-          </span>
-          <span title="dominofan0803">
-            <a href="https://www.youtube.com/user/dominofan0803">
-              <img src="images/dominofan0803.jpg" alt="dominofan"
-              class="avatar"></a>
-          </span>
-          <span title="dominostandard">
-            <a href="https://www.youtube.com/user/dominostandard">
-              <img src="images/dominostandard.jpeg" alt="dominostand"
-              class="avatar"></a>
-          </span>
-          <span title="FlippyCat">
-            <a href="https://www.youtube.com/user/FlippyCat">
-              <img src="images/FlippyCat.jpg" alt="Flippy" class="avatar"></a>
-          </span>
-          <span title="Hevesh5">
-            <a href="https://www.youtube.com/user/Hevesh5">
-              <img src="images/Hevesh5.jpg" alt="Hevesh5" class="avatar"></a>
-          </span>
-          <span title="megaverner">
-            <a href="https://www.youtube.com/user/megaverner">
-              <img src="images/megaverner.jpeg" alt="mega" class="avatar"></a>
-          </span>
-          <span title="minicliptube">
-            <a href="https://www.youtube.com/user/minicliptube">
-              <img src="images/minicliptube.jpeg" alt="miniclip"
-              class="avatar"></a>
-          </span>
-          <span title="ShanesDominoez">
-            <a href="https://www.youtube.com/user/ShanesDominoez">
-              <img src="images/ShanesDominoez.jpeg" alt="shanes"
-              class="avatar"></a>
-          </span>
-          <span title="Vswe">
-            <a href="https://www.youtube.com/user/ShanesDominoez">
-              <img src="images/Vswe.jpeg" alt="vswe" class="avatar"></a>
-          </span>
-        </div>
-      </article>
-    </section>
+    <section class="before">
+      <h2>BEFORE TheDominoSwag Jin</h2>
+        <article>
+          <p>
+          Before uploading domino videos, I was only watching a bunch of domino
+          videos. FlippyCat, dominofan0803, Hevesh5, etc.,
+          were my inspirations. So, on October 27, 2007, I created my formal
+          YouTube channel called 'jjm9512' for the first time. I began to upload
+          my domino videos and started the classic domino series initially.
+          Although I had few subscribers back then, I was not thinking about
+          reaching 1,000 subscribers on my channel.
+          </p>
+        </article>
+          <h3>Most Memorable YouTube Domino Main Channels I Watch</h3>
+          <article>
+            <span title="aznskittles09">
+              <a href="https://www.youtube.com/user/aznskittles09">
+                <img src="images/aznskittles09.jpeg" alt="azn" class="avatar">
+              </a>
+            </span>
+            <span title="bestpal">
+              <a href="https://www.youtube.com/user/bestpal">
+                <img src="images/bestpal.jpeg" alt="bestpal" class="avatar"></a>
+            </span>
+            <span title="Domino Boy 08">
+              <a href="https://www.youtube.com/user/dominoboy08">
+                <img src="images/Domino_Boy_08.jpeg" alt="dominoboy"
+                  class="avatar"></a>
+            </span>
+            <span title="dominofan0803">
+              <a href="https://www.youtube.com/user/dominofan0803">
+                <img src="images/dominofan0803.jpg" alt="dominofan"
+                  class="avatar"></a>
+            </span>
+            <span title="dominostandard">
+              <a href="https://www.youtube.com/user/dominostandard">
+                <img src="images/dominostandard.jpeg" alt="dominostand"
+                  class="avatar"></a>
+            </span>
+            <span title="FlippyCat">
+              <a href="https://www.youtube.com/user/FlippyCat">
+                <img src="images/FlippyCat.jpg" alt="Flippy" class="avatar"></a>
+            </span>
+            <span title="Hevesh5">
+              <a href="https://www.youtube.com/user/Hevesh5">
+                <img src="images/Hevesh5.jpg" alt="Hevesh5" class="avatar"></a>
+            </span>
+            <span title="megaverner">
+              <a href="https://www.youtube.com/user/megaverner">
+                <img src="images/megaverner.jpeg" alt="mega" class="avatar"></a>
+            </span>
+            <span title="minicliptube">
+              <a href="https://www.youtube.com/user/minicliptube">
+                <img src="images/minicliptube.jpeg" alt="miniclip"
+                class="avatar"></a>
+            </span>
+            <span title="ShanesDominoez">
+              <a href="https://www.youtube.com/user/ShanesDominoez">
+                <img src="images/ShanesDominoez.jpeg" alt="shanes"
+                class="avatar"></a>
+            </span>
+            <span title="Vswe">
+              <a href="https://www.youtube.com/user/ShanesDominoez">
+                <img src="images/Vswe.jpeg" alt="vswe" class="avatar"></a>
+            </span>
+          </div>
+        </article>
+      </section>
     <!-- -->
 
     <!-- 2nd Section: DURING TheDominoSwag Jin -->
-    <section style="background-color: #00B300; padding-bottom: 5px;">
-      <h2 style="background-color: #006400; color: #FFFFFF; margin: 0px;">
-        DURING TheDominoSwag Jin</h2>
-      <article>
-        <p>
-        Around late 2014, I was running out of domino ideas. Until I watched a
-        FlippyCat's video,
-        '<a href="https://www.youtube.com/watch?v=7BVr6LaC_HQ&t=187s"
-        target="_blank">Spectacular Domino Rally Stunt Screen Link</a>,' I was
-        able to invent something unique. Starting in early 2015, I had
-        expanded types of modern domino series. One of my modern domino series
-        has the most viewed video.
-        </p>
-      </article>
-      <article>
-        <p style="font-size: 40px;"><i>THE MOST VIEWED VIDEO AS OF NOW</i><br>
-          <iframe width="700" height="400"
-          src="https://www.youtube.com/embed/N2RhvWnS-TI">
-          </iframe>
-        </p>
-      </article>
-    </section>
+    <section class="during">
+      <h2>DURING TheDominoSwag Jin</h2>
+        <div class="content-wrap">
+          <article>
+            <p>
+            Around late 2014, I was running out of domino ideas. Until I watched
+            a FlippyCat's video,
+            '<a href="https://www.youtube.com/watch?v=7BVr6LaC_HQ&t=187s"
+            target="_blank">Spectacular Domino Rally Stunt Screen Link</a>,' I
+            was able to invent something unique. Starting in early 2015, I had
+            expanded types of modern domino series. One of my modern domino
+            series has the most viewed video.
+            </p>
+          </article>
+          <article>
+            <p style="font-size: 40px;"><i>THE MOST VIEWED VIDEO AS OF NOW</i>
+              <br>
+              <iframe width="560" height="315"
+              src="https://www.youtube-nocookie.com/embed/N2RhvWnS-TI"
+              title="YouTube video player" frameborder="0" allow="accelerometer;
+              autoplay; clipboard-write; encrypted-media; gyroscope;
+              picture-in-picture" allowfullscreen></iframe>
+            </p>
+          </article>
+        </div>
+      </section>
     <!-- -->
 
     <!-- 3rd Section: Classic Domino Series Playlists -->
-    <section style="background-color: #FF8080; padding-bottom: 5px;">
-      <h2 style="background-color: #B22222; color: #FFFFFF; margin: 0px;">
-        Classic Domino Series Playlists</h2>
-      <article>
-        <ul>
-          <iframe width="400" height="350"
-        src="https://www.youtube.com/embed/videoseries?list=PLD646882A58F34972"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
-          <iframe width="400" height="350"
-          src="https://www.youtube.com/embed/videoseries?list=PL0dwtlC-TSvP4tMP_NJ-STLZaMWRO4CIE"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
-          <iframe width="400" height="350"
-        src="https://www.youtube.com/embed/videoseries?list=PLB40B9825C34601C9"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
-          <iframe width="400" height="350"
-        src="https://www.youtube.com/embed/videoseries?list=PLB8F36BEB929F1A1B"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
-          <iframe width="400" height="350"
-          src="https://www.youtube.com/embed/videoseries?list=PL0dwtlC-TSvPmQxfsQyvKbhi7QIIuBkOX"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
+    <section class="classic">
+      <h2>Classic Domino Series Playlists</h2>
+        <article>
+          <ul>
+          <!-- Domino Fall Down Series -->
+          <iframe width="560" height="315"
+src="https://www.youtube-nocookie.com/embed/videoseries?list=PLD646882A58F34972"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          <!-- -->
+
+          <!-- Domino Screen Link Series -->
+          <iframe width="560" height="315"
+src="https://www.youtube-nocookie.com/embed/videoseries?list=PL0dwtlC-TSvP4tMP_NJ-STLZaMWRO4CIE"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          <!-- -->
+
+          <!-- Simple Rube Goldberg Series -->
+          <iframe width="560" height="315"
+src="https://www.youtube-nocookie.com/embed/videoseries?list=PLB40B9825C34601C9"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          <!-- -->
+
+          <!-- Domino Projects Series -->
+          <iframe width="560" height="315"
+src="https://www.youtube-nocookie.com/embed/videoseries?list=PLB8F36BEB929F1A1B"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          <!-- -->
+
+          <!-- Domino Builder's Challenges Series -->
+          <iframe width="560" height="315"
+src="https://www.youtube-nocookie.com/embed/videoseries?list=PL0dwtlC-TSvPmQxfsQyvKbhi7QIIuBkOX"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          <!-- -->
         </ul>
       </article>
     </section>
     <!-- -->
 
-    <!-- 4th Section: Modern Domino SEries Playlists -->
-    <section style="background-color: #00BFFF; padding-bottom: 5px;">
-      <h2 style="background-color: #0059b3; color: #FFFFFF; margin: 0px;">
-        Modern Domino Series Playlists</h2>
+    <!-- 4th Section: Modern Domino Series Playlists -->
+    <section class="modern">
+      <h2>Modern Domino Series Playlists</h2>
       <article>
         <ul>
-          <iframe width="400" height="350"
-        src="https://www.youtube.com/embed/videoseries?list=PLCA54D04026F58910"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
-          <iframe width="400" height="350"
-        src="https://www.youtube.com/embed/videoseries?list=PL0dwtlC-TSvNnOEEgnKfN1rRV5kOfj57W"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
-          <iframe width="400" height="350"
-        src="https://www.youtube.com/embed/videoseries?list=PL0dwtlC-TSvMkIwOseYv9ECgj8tiHspho"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
-          <iframe width="400" height="350"
-        src="https://www.youtube.com/embed/videoseries?list=PL0dwtlC-TSvO0E6ANUSkUPa6K3CqQDCw8"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
-          <iframe width="400" height="350"
-        src="https://www.youtube.com/embed/videoseries?list=PL0dwtlC-TSvOk_1ls6DPHlL-IS_6xsgEi"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
+          <!-- Domino Rally Stunt Builder Challenge Screen Links Series -->
+          <iframe width="560" height="315"
+src="https://www.youtube-nocookie.com/embed/videoseries?list=PLCA54D04026F58910"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          <!-- -->
+
+          <!-- Domino Rally ASMR Projects Series -->
+          <iframe width="560" height="315"
+src="https://www.youtube-nocookie.com/embed/videoseries?list=PL0dwtlC-TSvNnOEEgnKfN1rRV5kOfj57W"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          <!-- -->
+
+          <!-- Small Ball Chain Reaction ASMR Styles with Domino Rally (Express)
+               Stunts Series -->
+          <iframe width="560" height="315"
+src="https://www.youtube-nocookie.com/embed/videoseries?list=PL0dwtlC-TSvMkIwOseYv9ECgj8tiHspho"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          <!-- -->
+
+          <!-- Domino Rally Pivot Track Screen Link Series -->
+          <iframe width="560" height="315"
+src="https://www.youtube-nocookie.com/embed/videoseries?list=PL0dwtlC-TSvO0E6ANUSkUPa6K3CqQDCw8"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          <!-- -->
+
+          <!-- Empty Toilet/Towel Paper Rolls Fun with Dominoes Series -->
+          <iframe width="560" height="315"
+src="https://www.youtube-nocookie.com/embed/videoseries?list=PL0dwtlC-TSvOk_1ls6DPHlL-IS_6xsgEi"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          <!-- -->
         </ul>
       </article>
     </section>
     <!-- -->
 
   </main>
+  <!-- -->
+
+  <!-- Activating 'Top' Button -->
+  <script>
+  // Get the button
+  var mybutton = document.getElementById("myBtn");
+  //
+
+  /* When the user scrolls down 20px from the top of the document, show the
+     button */
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  /*        */
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  //
+  </script>
   <!-- -->
 </body>
 </html>
