@@ -3,7 +3,7 @@
 - Home
 - Subscribers Milestones
 - Frequently Asked Questions (FAQ)
-- Domino Pictures Gallery
+- Domino Photo Gallery
 
 ## Computer Languages Used
 - HTML5 (mostly used in spite of separate Domino Pictures Gallery page)
