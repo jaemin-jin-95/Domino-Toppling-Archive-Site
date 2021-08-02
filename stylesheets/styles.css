@@ -3,8 +3,9 @@ body {
   font-family: "Microsoft Sans Serif", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  /* background:-webkit-linear-gradient(left, white); */
 }
+
+p { line-height: 1.5; }
 
 a { text-decoration: none; }
 /*             */
@@ -31,48 +32,41 @@ a { text-decoration: none; }
 }
 /*                  */
 
+.content-wrap {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px 0;
+  width: 85%;
+}
+
 /* Hover the Home page */
 .active1:hover { background: #008000; }        /* green */
+
+/* Hover the Subscribers Milestones */
+.active2:hover { background: #0000FF; }        /* blue */
 
 /* Hover the FAQ page */
 .active3:hover {
   background: #FFFF00;                         /* yellow */
   color: #000000;                              /* black */
 }
-/*                */
+/*                    */
 
 /* Hover the Domino Pictures Gallery page */
 .active4:hover { background: #FF0000; }        /* red */
 /*                                        */
 
-/* Hover the Thoughts page */
-.active5:hover {
-  background: #FFFFFF;                         /* white */
-  color: #000000;                              /* black */
-}
-/*                         */
-
 /* Navbar container */
 .topnav {
   background: #000000;                         /* black */
-  overflow: hidden;
+  overflow: auto;
+  width: 100%;
 }
 /*                  */
 
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-/*                        */
-
-/* Hovering the dropdown */
-.dropdown:hover { background: #0000FF; }       /* blue *
-/*                       */
-
 /* Links inside the top nav */
 .topnav a {
-  color: #FFFFFF;                              /* white */
+  color: #FFFFFF;                     /* white */
   float: left;
   font-size: 17px;
   padding: 14px 16px;
@@ -80,49 +74,94 @@ a { text-decoration: none; }
   text-decoration: none;
 }
 
-.topnav .dropdown button:hover { background: #0000FF; }    /* blue */
+@media screen and (max-width: 700px) {
+  .topnav a {
+    display: block;
+    float: none;
+  }
+}
 /*                          */
 
-/* Dropdown button */
-.dropdown .dropbtn {
-  background: inherit;
-  border: none;
-  color: #FFFFFF;                     /* white */
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  font-size: 17px;
-  margin: 0;            /* Important for vertical align on mobile phones */
-  outline: none;
-  padding: 14px 16px;
+/* BEFORE TheDominoSwag Jin Layout */
+.before {
+  background: rgba(241, 177, 14, 0.5);
+  padding-bottom: 20px;
 }
-/*                 */
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  background: #F9F9F9;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  display: none;
-  min-width: 234.5px;
-  position: absolute;
-  z-index: 1;
-}
-/*                                      */
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: #000000;                     /* black */
-  display: block;
-  float: none;
-  padding: 12px 16px;
+.before h2 {
+  font-size: 40px;
+  margin: 0;
   text-align: left;
-  text-decoration: none;
 }
-/*                           */
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover { background: #ddd; }
-/*                                                        */
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content { display: block; }
 /*                                 */
-/*                      */
+
+/* Creating YouTube channel circle-shaped icons */
+.avatar {
+  border-radius: 50%;
+  height: 80px;
+  vertical-align: middle;
+  width: 80px;
+}
+/*                                              */
+
+/* DURING TheDominoSwag Jin Layout */
+.during {
+  background: rgba(0, 179, 0, 0.5);
+  padding-bottom: 5px;
+}
+
+.during h2 {
+  font-size: 40px;
+  margin: 0;
+  text-align: left;
+}
+/*                                 */
+
+/* Classic Domino Series Playlists Layout */
+.classic {
+  background: rgba(255, 0, 0, 0.5);
+  padding-bottom: 5px;
+}
+
+.classic h2 {
+  font-size: 35px;
+  margin: 0;
+  text-align: center;
+}
+/*                                        */
+
+/* Modern Domino Series Playlists Layout */
+.modern {
+  background: rgba(29, 187, 245);
+  padding-bottom: 5px;
+}
+
+.modern h2 {
+  font-size: 35px;
+  margin: 0;
+  text-align: center;
+}
+/*                                       */
+
+/* All YouTube Videos */
+iframe {
+  border-width: 0;
+}
+/*                    */
+
+/* iframe container */
+.iframe-container {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/*                  */
